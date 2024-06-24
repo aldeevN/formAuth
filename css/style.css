@@ -34,6 +34,13 @@
     color: red;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -53,10 +60,11 @@
     font-size: 45px;
     font-weight: 500;
 }
+
 .container__form {
     padding: 100px 30px;
     margin: 0 auto;
-    max-width: 1000px;
+    width: 1000px;
     min-height: 600px;
     background: var(--bg-gradient);
     display: flex;
@@ -119,6 +127,7 @@
 ::placeholder {
     font-size: 1rem;
 }
+
 /* footer */
 .footer {
     position: fixed;
@@ -126,6 +135,7 @@
     width: 100%;
     bottom: 0;
 }
+
 .footer__container {
     display: flex;
     justify-content: space-between;
@@ -137,10 +147,12 @@
 .footer__left {
     min-width: 400px;
 }
+
 .footer__right {
     display: flex;
     align-items: center;
 }
+
 .container__form-text {
     margin-right: 10px;
 }

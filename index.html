@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./js/login.js"></script>
     <title>Form auth</title>
 </head>
 
@@ -30,18 +31,18 @@
     </header>
     <main class="main">
         <div class="container">
-            <div class="container__form">
+            <form action="./dashboard.html" class="form container__form">
                 <h2 class="form__title">Заполните данные</h2>
-
-                <input class="form__input" type="email" placeholder="Ваш E-mail">
-
-                <input class="form__input" type="password" placeholder="Ваш пароль">
-
-                <input class="form__checkbox" type="checkbox">
+                <span class="error-message"></span>
+                <input class="form__input" id="email" type="email" placeholder="Ваш E-mail">
+                <span class="error-message"></span>
+                <input class="form__input" id="password" type="password" placeholder="Ваш пароль">
+                <span class="error-message"></span>
+                <input class="form__checkbox " id="checkbox" type="checkbox">
                 <span class="checkbox__text"> Даю своё согласие на обработку моих <br> персональных данных, в
                     соответствии с <br> <span class="form__pilite">политикой конфиденциальности</span></span>
-                <button class="form__left-btn">Отправить запрос</button>
-            </div>
+                <button class="form__left-btn" type="submit">Отправить запрос</button>
+            </form>
 
         </div>
     </main>
@@ -52,7 +53,7 @@
                     <h3 class="footer__title">Наши контакты</h3>
                     <p class="footer__contact"> +7 (988) 323-77-84</p>
                     <p class="footer__feedback">Если у вас возникли вопросы <br> или предложения, <br> напишите нам:
-                        <br>
+                        <br class="logout">
                         snk@kiber-one.com
                     </p>
                 </div>
